@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+import { Link as LinkRouter } from '@reach/router';
 
-export const Anchor = styled.a`
+export const Link = styled(LinkRouter)`
   display: flex;
   flex-direction: column;
   text-align: center;
   text-decoration: none;
   width: 75px;
+  margin: 0 5px 10px 0;
 `;
 
 export const Image = styled.img`
@@ -16,4 +18,5 @@ export const Image = styled.img`
   object-fit: cover;
   height: 75px;
   width: 75px;
+  margin-bottom: 10px;
 `;

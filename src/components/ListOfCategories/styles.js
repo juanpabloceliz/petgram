@@ -2,8 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
-  overflow: scroll;
   width: 100%;
+  overflow: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
   ${(props) =>
     props.fixed &&
     css`

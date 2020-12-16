@@ -15,7 +15,9 @@ const Provider = ({ children }) => {
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 
-export default {
+const MyContext = {
   Provider,
   Consumer: Context.Consumer,
 };
+
+export default MyContext;

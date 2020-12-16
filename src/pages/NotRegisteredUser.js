@@ -1,10 +1,10 @@
 import React from 'react';
-import Context from '../Context';
+import MyContext from '../Context';
 import { UserForm } from '../components/UserForm';
 
 export const NotRegisteredUser = () => {
   return (
-    <Context.Consumer>
+    <MyContext.Consumer>
       {({ activateAuth }) => {
         return (
           <>
@@ -13,6 +13,6 @@ export const NotRegisteredUser = () => {
           </>
         );
       }}
-    </Context.Consumer>
+    </MyContext.Consumer>
   );
 };
